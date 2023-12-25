@@ -1,0 +1,46 @@
+{
+    "name": "swisnl/php-cs-fixer-bitbucket",
+    "type": "php-cs-fixer-extension",
+    "description": "PHP CS Fixer reporter for Bitbucket Pipeline Reports",
+    "keywords": [
+        "php-cs-fixer",
+        "PHP CS Fixer",
+        "reporter",
+        "bitbucket",
+        "pipeline",
+        "reports",
+        "testing"
+    ],
+    "homepage": "https://github.com/swisnl/php-cs-fixer-bitbucket",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jasper Zonneveld",
+            "email": "jasper@swis.nl",
+            "homepage": "https://github.com/JaZo",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "swisnl/bitbucket-reports": "^0.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swis\\PhpCsFixer\\Report\\": "src"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint"
+    },
+    "bin": [
+        "bin/phpcsf2bb"
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
