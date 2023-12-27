@@ -26,7 +26,8 @@ php-cs-fixer check --format=gitlab --diff | phpcsf2bb
 
 ## Screenshots
 
-TODO
+![Annotations](/img/annotations.png)
+![Report](/img/report.png)
 
 ## Changelog
 
