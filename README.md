@@ -21,6 +21,14 @@ composer require --dev swisnl/php-cs-fixer-bitbucket
 To use this custom reporter you need to run PHP CS Fixer with the GitLab format and pipe the results to this package. For example:
 
 ```bash
+php-cs-fixer check --format=gitlab | phpcsf2bb
+```
+
+### Line numbers
+
+PHP CS Fixer doesn't keep track of line numbers, so all annotations are at the top of the file. You can add (approximate) line numbers based on the diff, by using the `--diff` argument for PHP CS Fixer. For example:
+
+```bash
 php-cs-fixer check --format=gitlab --diff | phpcsf2bb
 ```
 
