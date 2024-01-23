@@ -29,9 +29,13 @@ set_error_handler(static function ($severity, $message, $file, $line) {
 })();
 
 use Swis\PhpCsFixer\Report\BitbucketReporter;
+use Swis\PhpCsFixer\Report\ResultPrinter;
 
 $data = stream_get_contents(STDIN);
 $annotations = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
+
+$printer = new ResultPrinter();
+$printer->print($annotations);
 
 $reporter = new BitbucketReporter();
 $reporter->report($annotations);
