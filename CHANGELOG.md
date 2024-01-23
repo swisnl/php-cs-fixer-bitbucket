@@ -8,6 +8,12 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 - Nothing
 
+## [0.1.1] - 2024-01-23
+
+### Fixed
+
+- Exit with error code when there are code style issues.
+
 ## [0.1.0] - 2023-12-27
 
-- Initial release
+- Initial release.
