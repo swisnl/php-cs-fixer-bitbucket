@@ -8,6 +8,12 @@ Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) princi
 
 - Nothing
 
+## [0.2.0] - 2024-01-23
+
+### Added
+
+- Results are now also printed to STDOUT.
+
 ## [0.1.1] - 2024-01-23
 
 ### Fixed
