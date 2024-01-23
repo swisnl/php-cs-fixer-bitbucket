@@ -36,4 +36,8 @@ $annotations = json_decode($data, true, 512, JSON_THROW_ON_ERROR);
 $reporter = new BitbucketReporter();
 $reporter->report($annotations);
 
+if (count($annotations)) {
+    exit(1);
+}
+
 __HALT_COMPILER();
